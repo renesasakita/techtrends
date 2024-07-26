@@ -1,0 +1,30 @@
+# Docker run command
+docker run -d -p 7111:3111 techtrends-app
+
+# Docker logs command
+docker logs c17fb4c1b4ae
+
+# Example of logs output
+ * Serving Flask app 'app' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+2024-07-26 02:39:18,032 - werkzeug - WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2024-07-26 02:39:18,032 - werkzeug - INFO -  * Running on http://172.17.0.4:3111/ (Press CTRL+C to quit)
+2024-07-26 02:39:18,032 - werkzeug - INFO -  * Restarting with stat
+2024-07-26 02:39:18,128 - werkzeug - WARNING -  * Debugger is active!
+2024-07-26 02:39:18,128 - werkzeug - INFO -  * Debugger PIN: 140-641-458
+2024-07-26 02:45:41,807 - root - DEBUG - Request Path: /
+2024-07-26 02:45:41,832 - werkzeug - INFO - 10.166.17.163 - - [26/Jul/2024 02:45:41] "GET / HTTP/1.1" 200 -
+2024-07-26 02:45:41,865 - root - DEBUG - Request Path: /static/css/main.css
+2024-07-26 02:45:41,869 - werkzeug - INFO - 10.166.17.163 - - [26/Jul/2024 02:45:41] "GET /static/css/main.css HTTP/1.1" 200 -
+2024-07-26 02:45:41,918 - root - DEBUG - Request Path: /favicon.ico
+2024-07-26 02:45:41,919 - werkzeug - INFO - 10.166.17.163 - - [26/Jul/2024 02:45:41] "GET /favicon.ico HTTP/1.1" 404 -
+2024-07-26 02:45:56,186 - root - DEBUG - Request Path: /1
+2024-07-26 02:45:56,194 - werkzeug - INFO - 10.166.17.163 - - [26/Jul/2024 02:45:56] "GET /1 HTTP/1.1" 200 -
+2024-07-26 02:45:56,213 - root - DEBUG - Request Path: /static/css/main.css
+2024-07-26 02:45:56,214 - werkzeug - INFO - 10.166.17.163 - - [26/Jul/2024 02:45:56] "GET /static/css/main.css HTTP/1.1" 304 -
+2024-07-26 02:51:31,306 - root - DEBUG - Request Path: /metrics
+2024-07-26 02:51:31,309 - werkzeug - INFO - 10.166.17.163 - - [26/Jul/2024 02:51:31] "GET /metrics HTTP/1.1" 200 -
