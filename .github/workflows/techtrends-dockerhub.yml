@@ -29,5 +29,5 @@ jobs:
         file: ./Dockerfile
         push: true
         tags: dakita/techtrends:latest
-
+        no-cache: true
 
